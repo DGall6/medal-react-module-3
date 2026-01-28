@@ -33,16 +33,27 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
 }
 
 .btn {
-  margin-left: 0.5em;
-  padding: 0.25em;
-  background-color: rgb(255, 215, 0);
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.country {
+  display: inline-block;
+  border-radius: .5rem;
+  border: black solid 1px;
+  width: 16rem;
+  margin: 1em;
+}
+
+.country > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: black 1px solid;
+  padding: .35rem;
+  background: #efefef;
 }
