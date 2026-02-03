@@ -8,7 +8,7 @@ export default function Country(props) {
                 <button className="btn" onClick={() => props.onDelete(props.country.id)}>X</button>
             </header>
             {props.medals.current.map((medal) => (
-                <Medal key={medal.id} name={medal.name} />
+                <Medal key={medal.id} country={props.country} name={medal.name} handleIncrement={props.handleIncrement} handleDecrement={props.handleDecrement} />
             ))}
         </div>
     )
